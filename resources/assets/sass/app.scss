@@ -1,0 +1,425 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.nav-wrapper {
+  padding: 70px 0;
+  text-align: center;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.edit-remove
+{
+  width: 100%;
+  height: 30px;
+}
+
+.edit {
+  position: relative;
+  text-align: left;
+  float: left;
+  padding:5px;
+}
+.title-antwoord
+{
+  font-family: Muli;
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.1;
+  letter-spacing: normal;
+  color: #f3c9e7;
+}
+.button-reflectie {
+  margin: 8px;
+  height: 32px;
+  float: right;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(4, 156, 232, 0.16), 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+  background-image: linear-gradient(to bottom, #32baef, #5bc8f3);
+  border: solid 1px #049ce8;
+}
+.Reflectie-Response{
+  width:70%;
+  float: right;
+  padding: 10px 0 0 16px;
+  margin: 10px 5%;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(190, 233, 250, 0.32);
+  background-color: #fdf2fa;
+  border: solid 1px #f3c9e7;
+  margin: 4px;
+}
+
+.Reflectie-Bottom
+{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+// input field above menu
+// .Reflectie-input:focus{
+//   bottom: 0px;
+//   background-color: yellow;
+// }
+.Reflectie-input
+{
+  height: 40px;
+  padding: 14px 16px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  font-family: Muli;
+  font-size: 16px;
+  width: 80%;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border-color: transparent;
+  color: #bec9cd;
+}
+
+.body-reflectie{
+  height: 100%;
+  width: 100%;
+}
+
+.topbar-reflectie-button-left {
+  position: relative;
+  top: 25%;
+  height: 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+  background-color: #f1f7fa;
+  border: solid 1px #d7e1e8;
+  float: left;
+  font-family: prompt;
+  }
+
+.topbar-reflectie-button {
+position: relative;
+top: 25%;
+height: 32px;
+float: right;
+border-radius: 4px;
+box-shadow: 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+background-color: #f1f7fa;
+border: solid 1px #d7e1e8;
+font-family: prompt;
+}
+.vraagbox-reflectie-text {
+  padding: 0 0 14px 16px;
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+
+.vraagbox-reflectie-titel {
+  //width: 46px;
+  height: 21px;
+  padding-left: 16px;
+  font-family: Muli;
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f3c9e7;
+}
+
+.cards {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  box-shadow: 0 2px 2px 0 rgba(4, 156, 232, 0.16), 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+  background-image: linear-gradient(to bottom, #32baef, #5bc8f3);
+  border: solid 1px #049ce8;
+  border-radius: 100%;
+// position: absolute;
+  z-index: 999;
+}
+#card1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  left: 0;
+  right: 0;
+}
+#card2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 24.6px;
+  left: 34;
+  right: 0;
+  transform: rotate(-330deg);
+}
+#card3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 24.6px;
+  left: 0;
+  right: 34;
+  transform: rotate(-30deg);
+}
+
+.vraagbox-reflectie {
+  position: relative;
+  left: 5%;
+  top: 10%;
+  width: 85%;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #d954b4, #e177c3);
+  border: solid 1px #d00899;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.remove {
+  position: relative;
+  text-align: right;
+  float: right;
+  padding:5px;
+}
+
+.bin {
+  height: 16px;
+}
+
+.navbar-laravel {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.fixed-header {
+  padding-left: 0;
+  margin-right: 0;
+  box-shadow: inset 0 -1px 0 0 #d7e1e8;
+}
+
+.fixed-bottom {
+  padding-left: 0;
+  margin-right: 0;
+  box-shadow: inset 0 1px 0 0 #d7e1e8;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bg {
+  width: 64px;
+  height: 32px;
+  margin-top: 14px;
+  padding: 5px 7px 7px 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+  background-color: #f1f7fa;
+  border: solid 1px #d7e1e8;
+  float: right;
+  font-size: 12px;
+}
+
+.test {
+  width: 78%;
+  float: left !important;
+  margin-top: 20px;
+  padding-left: 22%;
+  font-size: 18px;
+  font-family: prompt;
+  font-weight: 500;
+}
+
+.test2 {
+  width: 56%;
+  float: left !important;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: prompt;
+  font-weight: 500;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 57px;
+//overflow: hidden;
+}
+
+/* Links inside the navigation bar */
+.container a {
+    float: left;
+    display: block;
+    border-bottom: 2px solid transparent;
+}
+
+.container a:hover {
+    border-bottom: 2px solid #32baef;
+}
+
+.container a.active {
+    border-bottom: 2px solid #32baef;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.active {
+  height: auto;
+}
+.bar-select {
+  height: 2px;
+  background-color: #32baef;
+}
+
+.more-button {
+  border-style: none;
+  background: none;
+  font-family: Prompt;
+  font-size: 16px;
+  color: #32baef;
+  margin: 0 0 10px 0;
+  left: 0px;
+  text-decoration: underline;
+  line-height: normal;
+}
+
+.growable input:checked {
+  color: red;
+}
+
+.more-button:hover {
+  color: black;
+}
+.growable {
+    -moz-transition: height .3s;
+    -ms-transition: height .3s;
+    -o-transition: height .3s;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 998;
+  margin: 0 !important;
+  background-color: rgba(3, 25, 33, 0.32);
+  transition: opacity .5s;
+}
+.memo-bottom {
+  position: absolute;
+  text-align: left;
+  bottom: 16%;
+  margin: 24px 5% 24px 5%;
+  font-family: Prompt;
+  font-size: 16px;
+}
+  .waarden-bottom
+  {
+    transition: bottom .3s;
+    position: absolute;
+    width: 90%;
+    text-align: right;
+    bottom: 14%;
+    margin: 24px 5% 24px 5%;
+  }
+  .title_scrollmenu{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: Prompt;
+  }
+  .title_value{
+    text-align: left;
+    display: inline-block;
+    float: left;
+    font-family: Prompt;
+    font-size: 18px;
+  }
+  .scrollmenu {
+    overflow: scroll;
+    height: 158px;
+  }
+
+.antwoordenblok {
+    background-color: #ffffff;
+    height: 48px;
+    width: 90%;
+    border-radius: 4px;
+    margin-right: 20px;
+    box-shadow: inset 0 1px 3px 0 #d7e1e8;
+    border: solid 1px #d7e1e8;
+    margin: 8px 5% 8px 5%;
+  }
+
+.previous {
+    position: relative;
+    width: 22%;
+    float: left;
+    padding-top: 12px;
+  }
+
+.next {
+  position: relative;
+  width: 22%;
+  float: right;
+  padding-top: 12px;
+}
+
+.table th, .table td {
+    border-top: 0px
+}
+
+.table {
+  text-align: center;
+  font-family: Multi;
+  font-size: 18px;
+}
+
+.example1 {
+  width: 100%;
+  text-align: right;
+}
+
+.nav-link {
+      padding: 0;
+}
