@@ -125,6 +125,7 @@ function isArrayBufferView(val) {
   return result;
 }
 
+
 /**
  * Determine if a value is a String
  *

@@ -19,10 +19,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="{{ asset('js/more_button.js') }}"></script>
+
+
 </head>
 <body>
 
-   
+
             @yield('content')
 
   </body>
