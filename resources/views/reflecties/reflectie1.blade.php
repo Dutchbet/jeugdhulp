@@ -27,15 +27,17 @@
 @if($reflectie->vraagnummer == '1')
     <div class="Reflectie-Response">
      <div class="title-antwoord">
-       Antwoord
+       ANTWOORD
      </div>
+     <div class="Textstyling-antwoord">
             {{$reflectie->antwoord}}
+      </div>
           <div class="edit-remove">
           <div class="remove">
               <form action="{{action('ReflectieController@destroy', $reflectie->id)}}" method="post">
                 @csrf
                 <input name="_method" type="hidden" value="DELETE">
-                <button type="submit"><img class="bin" src="/images/delete-color.svg"></button>
+                <href type="submit"><img class="bin" src="/images/delete-color.svg"></href>
               </form>
             </div>
 

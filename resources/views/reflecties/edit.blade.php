@@ -1,23 +1,33 @@
+@extends('layouts.app')
 
-  <body>
+@section('content')
+
+    <div class="fixed-header bg-light">
     <div class="container">
-      <h2>Antwoord bewerken</h2><br  />
+      <div class="body-reflectie">
+        <h2 class="text-center test">Antwoord bewerken</h2>
+      </div>
+    </div>
+  </div>
 
       <form method="post" action="{{action('ReflectieController@update', $id)}}">
 
-      
 
-        
+            <div class="Antwoord-aanpassen">
+             <div class="title-antwoord">
+               Antwoord
+             </div>
+
         @csrf
         <input name="_method" type="hidden" value="PATCH">
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">
-            <label for="name">Antwoord</label>
-            <input type="text" class="form-control" name="antwoord" value="{{$reflecties->antwoord}}">
+            <label for="name">Antwoord aanpassen</label>
+            <input type="textarea" class="antwoorden-form" name="antwoord" value="{{$reflecties->antwoord}}">
           </div>
         </div>
-       
+
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4" style="margin-top:60px">
@@ -27,7 +37,7 @@
       </form>
     </div>
 
-  </body>
+
 
 
 

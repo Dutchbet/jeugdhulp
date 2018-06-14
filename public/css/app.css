@@ -10457,6 +10457,40 @@ a.text-dark:focus {
   border: solid 1px #049ce8;
 }
 
+.Antwoord-aanpassen {
+  width: 90%;
+  float: right;
+  padding: 10px 0 0 16px;
+  margin: 10px 5%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(190, 233, 250, 0.32);
+          box-shadow: 0 2px 8px 0 rgba(190, 233, 250, 0.32);
+  background-color: #fdf2fa;
+  border: solid 1px #f3c9e7;
+}
+
+.label {
+  color: #d00899;
+}
+
+.antwoorden-form {
+  display: block;
+  width: 95%;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  height: 50%;
+}
+
 .Reflectie-Response {
   width: 70%;
   float: right;
@@ -10468,6 +10502,16 @@ a.text-dark:focus {
   background-color: #fdf2fa;
   border: solid 1px #f3c9e7;
   margin: 4px;
+}
+
+.Textstyling-antwoord {
+  font-family: Muli !important;
+  font-size: 16px;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #d00899 !important;
+  overflow: auto;
+  margin: 1px 20px 8px 20px;
 }
 
 .Reflectie-Bottom {
@@ -10490,7 +10534,7 @@ a.text-dark:focus {
   line-height: normal;
   letter-spacing: normal;
   border-color: transparent;
-  color: #bec9cd;
+  color: #0e1118;
 }
 
 .body-reflectie {
@@ -10707,6 +10751,7 @@ a.text-dark:focus {
   float: left;
   display: block;
   border-bottom: 2px solid transparent;
+  color: #3e525a;
 }
 
 .container a:hover {
@@ -10787,7 +10832,7 @@ a.text-dark:focus {
   -webkit-transition: bottom .3s;
   transition: bottom .3s;
   position: absolute;
-  width: 70%;
+  width: 90%;
   text-align: right;
   bottom: 9%;
 }
@@ -10855,3 +10900,4 @@ a.text-dark:focus {
 .nav-link {
   padding: 0;
 }
+
