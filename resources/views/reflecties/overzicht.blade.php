@@ -8,8 +8,13 @@
 <div class="fixed-header bg-light">
     <div class="container">
   <div class="body-reflectie">
+    <div class="previous">
+      <button class="topbar-reflectie-button-left"><a href="{{ url('reflecties/reflectie10') }}">Vraag 10</button></a>
+    </div>
     <h2 class="text-center test2">Overzicht</h2>
-    <button class="topbar-reflectie-button-left"><a href="#">Versturen</button></a>
+    <div class="next">
+      <button class="topbar-reflectie-button-left"><a href="#">Versturen</button></a>
+    </div>
 </div>
 </div>
 </div>

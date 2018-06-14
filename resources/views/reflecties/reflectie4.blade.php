@@ -43,7 +43,7 @@
               </form>
             </div>
 
-              <a href="{{action('ReflectieController@edit', $reflectie->id)}}" class="edit">Edit</a>
+              <a href="{{action('ReflectieController@edit', $reflectie->id)}}" class="edit"><img src="/images/edit-color.svg"></a>
           </div>
             </div>
             @endif

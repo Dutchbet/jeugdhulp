@@ -34,7 +34,18 @@
        Antwoord
      </div>
             {{$reflectie->antwoord}}
+            <div class="edit-remove">
+            <div class="remove">
+                <form action="{{action('ReflectieController@destroy', $reflectie->id)}}" method="post">
+                  @csrf
+                  <input name="_method" type="hidden" value="DELETE">
+                  <button type="submit"><img class="bin" src="/images/delete-color.svg"></button>
+                </form>
+              </div>
 
+                <a href="{{action('ReflectieController@edit', $reflectie->id)}}" class="edit"><img src="/images/edit-color.svg"></a>
+            </div>
+              </div>
             </div>
             @endif
           @endforeach

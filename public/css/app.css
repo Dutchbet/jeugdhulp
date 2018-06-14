@@ -10627,10 +10627,6 @@ a.text-dark:focus {
   padding: 5px;
 }
 
-.bin {
-  height: 16px;
-}
-
 .navbar-laravel {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -10782,7 +10778,7 @@ a.text-dark:focus {
 .memo-bottom {
   position: absolute;
   text-align: left;
-  bottom: 16%;
+  bottom: 10%;
   font-family: Prompt;
   font-size: 16px;
 }
@@ -10791,9 +10787,9 @@ a.text-dark:focus {
   -webkit-transition: bottom .3s;
   transition: bottom .3s;
   position: absolute;
-  width: 90%;
+  width: 70%;
   text-align: right;
-  bottom: 14%;
+  bottom: 9%;
 }
 
 .title_scrollmenu {
