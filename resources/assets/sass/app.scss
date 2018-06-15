@@ -43,6 +43,18 @@
   letter-spacing: normal;
   color: #f3c9e7;
 }
+.title-edit
+{
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.1;
+  letter-spacing: normal;
+  color: #d00899;
+  margin-left: 11px;
+}
 .button-reflectie {
   margin: 8px;
   height: 32px;
@@ -68,19 +80,20 @@ color: #d00899;
 .antwoorden-form{
   display: block;
   width: 95%;
+  height: 392px;
   padding: 0.375rem 0.75rem;
   font-size: 0.9rem;
   line-height: 1.6;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #d7e1e8;
   border-radius: 0.25rem;
+  box-shadow: inset 0 1px 3px 0 #d7e1e8;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  height: 50%;
 }
 .Reflectie-Response{
   width:70%;
