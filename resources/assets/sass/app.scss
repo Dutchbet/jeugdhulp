@@ -469,3 +469,128 @@ font-family: prompt;
 .nav-link {
       padding: 0;
 }
+
+
+.etische {
+  position: absolute;
+  margin-left: 32px;
+  bottom: 327px;
+  width: 248px;
+  height: 74px;
+  border-radius: 8px;
+  background-color: #32baef;
+  border: solid 2px #049ce8;
+}
+.btn-etische {
+  width: 208px;
+  height: 40px;
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top:6px;
+  margin-left: 16px;
+}
+
+.oplossing {
+  position: absolute;
+  right: 27px;
+  float: right !important;
+  bottom: 245px;
+  width: 240px;
+  height: 58px;
+  border-radius: 8px;
+  background-color: #e177c3;
+  border: solid 2px #d00899;
+}
+.btn-oplossing {
+  width: 208px;
+  height: 40px;
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+.login {
+  position: absolute;
+  text-align: center;
+  margin-left: 32px;
+  bottom: 96px;
+  width: 90%;
+  height: 48px;
+  background-image: linear-gradient(to bottom, #32baef, #5bc8f3);
+  border: solid 1px #049ce8;
+  border-radius: 4px;
+}
+.btn-login {
+  width: 311px;
+  height: 21px;
+  padding-top: 13px;
+  font-family: Prompt;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #effafe;
+}
+
+.register {
+  position: absolute;
+  text-align: center;
+  margin-left: 32px;
+  bottom: 32px;
+  width: 90%;
+  height: 48px;
+  border: solid 1px #8dd9f7;
+  border-radius: 4px;
+}
+.btn-register {
+  width: 311px;
+  height: 21px;
+  padding-top: 13px;
+  font-family: Prompt;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32baef;
+}
+
+.jammen {
+  font-family: Muli;
+  font-size: 38px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.morele-jams {
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #effafe;
+}

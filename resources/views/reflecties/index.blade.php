@@ -6,7 +6,8 @@
 
 <div class="nav-wrapper">
         @if (Route::has('login'))
-        <h1>Jeugdhulp Friesland<h1>
+        <div class="jammen">Jammen</div>
+            <div class="morele-jams">App voor morele jamsessies</div>
                 @auth
                 <div class="btn-group-vertical">
                     <a class="btn btn-primary" href="{{ url('reflecties/reflectie1') }}" role="button">Verder gaan met reflectie</a>
@@ -21,9 +22,28 @@
                 </div>
 
                 @else
-                <div class="btn-group">
-                    <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
-                    <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
+                    <div class="form-group row mb-0">
+                      <div class="etische">
+                         <div class="btn btn-etische">Etische dilema’s. Hoe kun je hier de beste besluiten in nemen?</div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row mb-0">
+                      <div class="oplossing">
+                         <div class="btn btn-oplossing">Jammen biedt de oplossing!</div>
+                      </div>
+                    </div>
+
+                <!-- Inloggen en registreren -->
+                    <div class="form-group row mb-0">
+                      <div class="login">
+                         <a href="{{ route('login') }}" class="btn btn-login">Inloggen</a>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                     <div class="register">
+                            <a href="{{ route('register') }}" class="btn btn-register">Registreren</a>
+                     </div>
                 </div>
                 @endauth
          
