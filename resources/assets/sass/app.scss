@@ -492,8 +492,8 @@ font-family: prompt;
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
-  margin-top:6px;
   margin-left: 16px;
+  text-align: left;
 }
 
 .oplossing {
@@ -506,6 +506,7 @@ font-family: prompt;
   border-radius: 8px;
   background-color: #e177c3;
   border: solid 2px #d00899;
+  text-align: left;
 }
 .btn-oplossing {
   width: 208px;
@@ -518,7 +519,7 @@ font-family: prompt;
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
-  margin-top: 6px;
+  text-align: left;
 }
 
 .login {
@@ -534,7 +535,7 @@ font-family: prompt;
 }
 .btn-login {
   width: 311px;
-  height: 21px;
+  height: 48px;
   padding-top: 13px;
   font-family: Prompt;
   font-size: 14px;

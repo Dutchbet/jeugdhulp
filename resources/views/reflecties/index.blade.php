@@ -24,13 +24,13 @@
                 @else
                     <div class="form-group row mb-0">
                       <div class="etische">
-                         <div class="btn btn-etische">Etische dilema’s. Hoe kun je hier de beste besluiten in nemen?</div>
+                         <div class="btn btn-etische">Etische dilema’s. Hoe kun <br>je hier de beste besluiten in <br>nemen?</div>
                       </div>
                     </div>
 
                     <div class="form-group row mb-0">
                       <div class="oplossing">
-                         <div class="btn btn-oplossing">Jammen biedt de oplossing!</div>
+                         <div class="btn btn-oplossing">Jammen biedt de<br>oplossing!</br></div>
                       </div>
                     </div>
 
@@ -46,7 +46,7 @@
                      </div>
                 </div>
                 @endauth
-         
+
         @endif
 </div>
 @endsection
