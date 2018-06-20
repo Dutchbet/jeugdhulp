@@ -10981,6 +10981,11 @@ a.text-dark:focus {
 .gast {
   position: absolute;
   bottom: 24px;
+  font-family: Prompt;
+}
+
+.btn-link {
+  color: #32baef !important;
 }
 
 .inlog_input {
@@ -11016,6 +11021,7 @@ a.text-dark:focus {
   bottom: 96px;
   width: 90%;
   height: 48px;
+  font-family: Prompt;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#32baef), to(#5bc8f3));
   background-image: linear-gradient(to bottom, #32baef, #5bc8f3);
   border: solid 1px #049ce8;
