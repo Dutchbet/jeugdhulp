@@ -25,7 +25,7 @@
           <div class="form-group col-md-4">
             <div class="title-edit">Antwoord aanpassen</div>
             <textarea name="antwoord" class="antwoorden-form" rows="25" cols="30" value="{{$reflecties->antwoord}}"></textarea>
-<!--            <input type="textarea" class="antwoorden-form" name="antwoord" value="{{$reflecties->antwoord}}"> -->
+    <!--    <input type="textarea" class="antwoorden-form" name="antwoord" value="{{$reflecties->antwoord}}"> -->
           </div>
         </div>
 
@@ -37,9 +37,6 @@
         </div>
       </form>
     </div>
-
-
-
 
 
 </html>

@@ -522,10 +522,39 @@ font-family: prompt;
   text-align: left;
 }
 
+.gast {
+  position: absolute;
+  bottom: 24px;
+}
+
+.inlog_input {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  margin-top: 140px;
+}
+
+.register_input {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  margin-top: 155px;
+}
+
 .login {
   position: absolute;
   text-align: center;
-  margin-left: 32px;
+  margin-left: 16px;
+  bottom: 96px;
+  width: 90%;
+  height: 48px;
+  background-image: linear-gradient(to bottom, #32baef, #5bc8f3);
+  border: solid 1px #049ce8;
+  border-radius: 4px;
+}
+.login2 {
+  position: absolute;
+  text-align: center;
   bottom: 96px;
   width: 90%;
   height: 48px;
@@ -558,6 +587,15 @@ font-family: prompt;
   border: solid 1px #8dd9f7;
   border-radius: 4px;
 }
+.register2 {
+  position: absolute;
+  text-align: center;
+  bottom: 24px;
+  width: 90%;
+  height: 48px;
+  border: solid 1px #8dd9f7;
+  border-radius: 4px;
+}
 .btn-register {
   width: 311px;
   height: 21px;
@@ -583,6 +621,33 @@ font-family: prompt;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+}
+
+.inloggen {
+  font-family: Prompt;
+  font-size: 34px;
+  margin-top: 141px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #172339;
+  }
+
+.inloggen_info {
+  width: 100%;
+  height: 54px;
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: #859196;
 }
 
 .morele-jams {

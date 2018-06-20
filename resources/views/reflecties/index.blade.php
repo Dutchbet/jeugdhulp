@@ -35,16 +35,14 @@
                     </div>
 
                 <!-- Inloggen en registreren -->
-                    <div class="form-group row mb-0">
                       <div class="login">
                          <a href="{{ route('login') }}" class="btn btn-login">Inloggen</a>
                       </div>
-                    </div>
                     <div class="form-group row mb-0">
                      <div class="register">
                             <a href="{{ route('register') }}" class="btn btn-register">Registreren</a>
                      </div>
-                </div>
+                    </div>
                 @endauth
 
         @endif
