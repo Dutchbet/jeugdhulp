@@ -11148,6 +11148,18 @@ a.text-dark:focus {
   border: solid 1px #d7e1e8;
 }
 
+.vorige {
+  position: absolute;
+  text-align: center;
+  width: 32px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(4, 156, 232, 0.16), 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+          box-shadow: 0 2px 2px 0 rgba(4, 156, 232, 0.16), 0 1px 4px 0 rgba(3, 25, 33, 0.08);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#32baef), to(#5bc8f3));
+  background-image: linear-gradient(to bottom, #32baef, #5bc8f3);
+  border: solid 1px #049ce8;
+}
+
 input[type=email] {
   font-family: Muli;
   font-size: 16px;

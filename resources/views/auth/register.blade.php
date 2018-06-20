@@ -2,7 +2,11 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+<div class="body-reflectie">
+  <div class="previous">
+    <button class="btn btn-primary vorige"><a href="{{ url('/') }}"><img src="/images/Combined Shape.png" alt="Vorige"></button></a>
+  </div>
+    <div class="row justify-content-center"></div>
         <div class="col-md-8">
           <div class="login_image"><img src="/images/login-icon.png" alt="Log in"></div>
             <div class="inloggen">Registratie</div>
