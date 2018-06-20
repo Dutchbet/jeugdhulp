@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
-@section('content') 
+@section('content')
 <div class="container">
+
     <div class="row justify-content-center">
         <div class="col-md-8">
+          <div class="login_image"><img src="/images/login-icon.png" alt="Log in"></div>
+
           <div class="inloggen">Inloggen</div>
           <div class="inloggen_info">Vul hier jouw e-mailadress en <br/>wachtwoord in om in te loggen</div>
                 <div class="card-body">

@@ -39,4 +39,12 @@ Route::post('reflecties/reflectie9', 'ReflectieController@reflectie9')->name('Re
 Route::get('reflecties/reflectie10', 'ReflectieController@reflectie10')->name('Reflectie vraag 10');
 Route::post('reflecties/reflectie10', 'ReflectieController@reflectie10')->name('Reflectie vraag 10');
 Route::get('reflecties/overzicht', 'ReflectieController@overzicht')->name('overzicht');
+
+Route::get('reflecties/mailen', 'ReflectieController@mailen')->name('Mailen');
+
+Route::post('reflecties/mailen', 'ReflectieController@sendemail')->name('postmail');
+Route::get('reflecties/index', 'ReflectieController@deleteuserposts')->name('deleteposts');
+
+Route::get('reflecties/overzicht', 'ReflectieController@overzicht')->name('overzicht');
+
 Route::resource('reflecties','ReflectieController');

@@ -1,6 +1,6 @@
+<div class="background">
 
 @extends('layouts.app')
-
 @section('content')
 
 
@@ -46,5 +46,6 @@
                 @endauth
 
         @endif
+</div>
 </div>
 @endsection

@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+          <div class="login_image"><img src="/images/login-icon.png" alt="Log in"></div>
             <div class="inloggen">Registratie</div>
           <div class="inloggen_info">Voordat je aan de slag kan, willen we <br/>eerst wat gegevens van jou hebben.</div>
 
@@ -35,7 +36,6 @@
                         </div>
 
                         <div class="form-group row">
-
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Wachtwoord bevestigen">
                         </div>
                     </div>

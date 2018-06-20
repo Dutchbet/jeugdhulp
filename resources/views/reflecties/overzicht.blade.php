@@ -13,7 +13,7 @@
     </div>
     <h2 class="text-center test2">Overzicht</h2>
     <div class="next">
-      <button class="topbar-reflectie-button-left"><a href="#">Versturen</button></a>
+      <button class="topbar-reflectie-button-left"><a href="{{ url('reflecties/mailen') }}">Versturen</button></a>
     </div>
 </div>
 </div>

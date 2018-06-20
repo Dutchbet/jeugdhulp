@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Reflectie;
 use Auth;
 use DB;
+use Mail;
+
 
 use Illuminate\Http\Request;
 
@@ -12,7 +14,7 @@ class ReflectieController extends Controller
 {
     public function reflectie1()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -26,7 +28,7 @@ class ReflectieController extends Controller
     }
     public function reflectie2()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -40,7 +42,7 @@ class ReflectieController extends Controller
     }
     public function reflectie3()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -54,7 +56,7 @@ class ReflectieController extends Controller
     }
     public function reflectie4()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -68,7 +70,7 @@ class ReflectieController extends Controller
     }
     public function reflectie5()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -82,7 +84,7 @@ class ReflectieController extends Controller
     }
     public function reflectie6()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -96,7 +98,7 @@ class ReflectieController extends Controller
     }
     public function reflectie7()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -110,7 +112,7 @@ class ReflectieController extends Controller
     }
     public function reflectie8()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -124,7 +126,7 @@ class ReflectieController extends Controller
     }
     public function reflectie9()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -138,7 +140,7 @@ class ReflectieController extends Controller
     }
     public function reflectie10()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -151,7 +153,7 @@ class ReflectieController extends Controller
 
     }
 
-    
+
     public function index()
     {
         return view('reflecties.index');
@@ -165,7 +167,7 @@ class ReflectieController extends Controller
         $reflecties->vraagnummer=$request->get('vraagnummer');
         $reflecties->user_id=$request->user()->id;
         $reflecties->save();
-        
+
         return back(); return redirect()->back()->with('success', 'Information has been added');
     }
     public function destroy($id)
@@ -175,7 +177,7 @@ class ReflectieController extends Controller
         return back(); return redirect()->back()->with('success', 'Information has been added');
     }
     public function edit($id)
-    {   
+    {
         $reflecties = \App\Reflectie::find($id);
         return view('reflecties.edit',compact('reflecties','id'));
     }
@@ -212,7 +214,7 @@ class ReflectieController extends Controller
 
     public function overzicht()
     {
-        
+
         $user = Auth::user();
         if ($user)
         {
@@ -222,6 +224,51 @@ class ReflectieController extends Controller
 
 
         return view('reflecties.overzicht', compact('reflecties'));
+
+    }
+    public function sendemail(Request $request)
+    {
+
+        $user = Auth::user();
+        if ($user) {
+
+            $reflecties = DB::table('reflecties')->where('user_id', $user->id)->get();
+            $email = $request->mail;
+
+            Mail::send('email.reflecties', ['reflecties' => $reflecties, 'email' => $email], function ($m) use ($reflecties, $email) {
+                $m->from('reflectie@tnwproject.nl', 'Digitale Jam Sessie');
+
+                $m->to($email)->subject('Digitale Reflectie');
+            });
+        }
+
+        return redirect('/')->with('status', 'Email verstuurd!');
+
+
+        //return view('reflecties.mailen', compact('reflecties'));
+
+    }
+
+    public function mailen()
+    {
+        $user = Auth::user();
+        if ($user)
+        {
+            $reflecties = DB::table('reflecties')->where('user_id', $user->id)->get();
+        }
+
+        return view('reflecties.mailen', compact('reflecties'));
+    }
+
+
+    public function deleteuserposts()
+    {
+        $user = Auth::user();
+        if ($user)
+        {
+            $reflecties = DB::table('reflecties')->where('user_id', $user->id)->delete();
+        }
+        return redirect('reflecties/reflectie1');
 
     }
 
