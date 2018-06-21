@@ -150,7 +150,7 @@
                                                                     <div class="vraagbox-reflectie-titel">
                                                                           Vraag 7
                                                                     </div>
-                                                                    <div class="vraagbox-reflectie-text">Formuleer je gewetensvraag, Begn met: moet...? Of:mag...?</div>
+                                                                    <div class="vraagbox-reflectie-text">Formuleer je gewetensvraag, Begn met: moet...? Of: mag...?</div>
                                                               </div>
 
                                                               @foreach($reflecties as $reflectie)
@@ -213,7 +213,7 @@
                                                                                                         <div class="vraagbox-reflectie-titel">
                                                                                                               Vraag 10
                                                                                                         </div>
-                                                                                                        <div class="vraagbox-reflectie-text">Welke stappen ga je in welke volgore zetten?</div>
+                                                                                                        <div class="vraagbox-reflectie-text">Welke stappen ga je in welke volgorde zetten?</div>
                                                                                                   </div>
 
                                                                                                   @foreach($reflecties as $reflectie)

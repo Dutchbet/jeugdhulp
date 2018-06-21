@@ -10417,7 +10417,7 @@ a.text-dark:focus {
 }
 
 .background {
-  background-image: url("/images/landingpage-bg.png");
+  background-image: url("/public/images/landingpage-bg.png");
   height: 100%;
 }
 
@@ -10540,8 +10540,10 @@ a.text-dark:focus {
 
 .Reflectie-Bottom {
   position: absolute;
-  bottom: 0px;
-  width: 100%;
+  bottom: 5px;
+  width: 80%;
+  left: 10%;
+  right: 10%;
 }
 
 .Reflectie-input {
@@ -11058,7 +11060,9 @@ a.text-dark:focus {
   position: absolute;
   text-align: center;
   bottom: 24px;
-  width: 90%;
+  width: 80%;
+  left: 10%;
+  right: 10%;
   height: 48px;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(4, 156, 232, 0.16), 0 1px 4px 0 rgba(3, 25, 33, 0.08);
@@ -11146,6 +11150,7 @@ a.text-dark:focus {
   -webkit-box-shadow: inset 0 1px 3px 0 #d7e1e8;
           box-shadow: inset 0 1px 3px 0 #d7e1e8;
   border: solid 1px #d7e1e8;
+  text-align: center;
 }
 
 .vorige {

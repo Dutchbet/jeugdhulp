@@ -29,14 +29,16 @@
 @foreach($reflecties as $reflectie)
 
 @if($reflectie->vraagnummer == '2')
-    <div class="Reflectie-Response">
+<div class="Reflectie-Response">
      <div class="title-antwoord">
-       Antwoord
+       ANTWOORD
      </div>
+     <div class="Textstyling-antwoord">
             {{$reflectie->antwoord}}
+      </div>
           <div class="edit-remove">
           <div class="remove">
-              <form action="{{action('ReflectieController@destroy', $reflectie->id)}}" method="post">
+              <form action="{{action('ReflectieController@destroy', $reflectie->id)}}" method="post" onclick="return confirm('Weet je zeker dat je het wilt verwijderen?')">
                 @csrf
                 <input name="_method" type="hidden" value="DELETE">
                 <button type="submit"><img class="bin" src="/images/delete-color.svg"></button>
@@ -56,7 +58,7 @@
 
         <div class="Reflectie-Bottom">
             <div class="antwoordenblok">
-      <input type="text" type="text" placeholder="Typ hier uw antwoord" class="Reflectie-input" name="antwoord" id="antwoord">
+      <input type="text" type="text" placeholder="Typ hier uw antwoord" class="Reflectie-input" name="antwoord" id="antwoord" autocomplete="off" required="required">
         <input type="hidden" id="vraagnummer" name="vraagnummer" value="2">
             <button type="submit" class="button-reflectie"><img src="/images/send.svg"></button>
           </div>

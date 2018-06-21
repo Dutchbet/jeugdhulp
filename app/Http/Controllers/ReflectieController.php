@@ -12,9 +12,10 @@ use Illuminate\Http\Request;
 
 class ReflectieController extends Controller
 {
+    // haalt de route voor reflectie 1 op
     public function reflectie1()
     {
-
+        // auth als de user is ingeloged pakt daarna de db table reflecties waar de foreign key user_id gelijk is aan de huidige user ID
         $user = Auth::user();
         if ($user)
         {
@@ -22,7 +23,7 @@ class ReflectieController extends Controller
         }
 
 
-
+        // gooit wat hij ophaalt in de vieuw reflectie 1
         return view('reflecties.reflectie1', compact('reflecties'));
 
     }
@@ -159,7 +160,7 @@ class ReflectieController extends Controller
         return view('reflecties.index');
     }
 
-
+        // opslaan van gegevens
     public function store(Request $request)
     {
         $reflecties= new \App\Reflectie;
@@ -170,18 +171,20 @@ class ReflectieController extends Controller
 
         return back(); return redirect()->back()->with('success', 'Information has been added');
     }
+    //verwijderen van gegevens
     public function destroy($id)
     {
         $reflecties = \App\Reflectie::find($id);
         $reflecties->delete();
         return back(); return redirect()->back()->with('success', 'Information has been added');
     }
+    // haalt de ID op van de huidige gegevens
     public function edit($id)
     {
         $reflecties = \App\Reflectie::find($id);
         return view('reflecties.edit',compact('reflecties','id'));
     }
-
+    // het updaten van gegevens en redirect naar de reflectie waar hij vandaan komt nadat hij klaar is
     public function update(Request $request, $id)
     {
         $reflecties= \App\Reflectie::find($id);
@@ -226,6 +229,8 @@ class ReflectieController extends Controller
         return view('reflecties.overzicht', compact('reflecties'));
 
     }
+
+    // auth de user haalt gegevens op uit de database en formfeld van de pagina mailen
     public function sendemail(Request $request)
     {
 
@@ -260,7 +265,7 @@ class ReflectieController extends Controller
         return view('reflecties.mailen', compact('reflecties'));
     }
 
-
+    // maakt de reflectie helemaal leeg
     public function deleteuserposts()
     {
         $user = Auth::user();

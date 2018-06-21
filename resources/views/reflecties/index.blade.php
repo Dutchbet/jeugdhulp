@@ -1,5 +1,5 @@
-<div class="background">
 
+<div class="background">
 @extends('layouts.app')
 @section('content')
 
@@ -11,7 +11,7 @@
                 @auth
                 <div class="btn-group-vertical">
                     <a class="btn btn-primary" href="{{ url('reflecties/reflectie1') }}" role="button">Verder gaan met reflectie</a>
-                    <a class="btn btn-primary" href="{{ url('reflecties/reflectie1') }}" role="button">Nieuwe reflectie</a>
+                    <a class="btn btn-primary" href="{{ route('deleteposts') }}" role="button" onclick="return confirm('Je verwijderd hier mee ook de oude reflectie weet je het zeker?')">Nieuwe reflectie</a>
                     <a class="btn btn-primary" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >
                      {{ __('Logout') }}
                  </a>

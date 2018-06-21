@@ -34,10 +34,10 @@
       </div>
           <div class="edit-remove">
           <div class="remove">
-              <form action="{{action('ReflectieController@destroy', $reflectie->id)}}" method="post">
+              <form action="{{action('ReflectieController@destroy', $reflectie->id)}}" method="post" onclick="return confirm('Weet je zeker dat je het wilt verwijderen?')">
                 @csrf
                 <input name="_method" type="hidden" value="DELETE">
-                <href type="submit"><img class="bin" src="/images/delete-color.svg"></href>
+                <button type="submit"><img class="bin" src="/images/delete-color.svg"></button>
               </form>
             </div>
 
@@ -53,7 +53,7 @@
         @csrf
         <div class="Reflectie-Bottom">
             <div class="antwoordenblok">
-        <input type="text" type="text" placeholder="Typ hier uw antwoord" class="Reflectie-input" name="antwoord" id="antwoord">
+        <input type="text" type="text" placeholder="Typ hier uw antwoord" class="Reflectie-input" name="antwoord" id="antwoord" autocomplete="off" required="required">
         <input type="hidden" id="vraagnummer" name="vraagnummer" value="1">
             <button type="submit" class="button-reflectie"><img src="/images/send.svg"></button>
           </div>

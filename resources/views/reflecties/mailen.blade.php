@@ -27,10 +27,8 @@
 <body>
     <div class="flex-center position-ref full-height">
       <div class="email_content">
-      <div class="emailblok">
         <form action="{{ route('postmail') }}" method="post">
-            <input type="email" name="mail" placeholder="Typ hier een e-mailadres">
-      </div>
+            <input type="email" name="mail" placeholder="Typ hier een e-mailadres" autocomplete="off" required="required" class="emailblok">
                   <button type="submit" class="btn btn-primary register2">Verstuur uitkomsten</button>
             {{ csrf_field() }}
       </div>  </form>
